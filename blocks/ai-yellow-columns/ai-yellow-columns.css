@@ -1,0 +1,81 @@
+
+/* Wrapper for the entire block */
+.ai-yellow-columns-wrapper {
+  background-color: #ffd600; /* Vibrant yellow background */
+  padding: 20px;
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  justify-content: center; /* Center align items horizontally */
+  height: 100vh; /* Full viewport height for better alignment */
+}
+
+/* Flex container for the two main sections */
+.ai-yellow-columns-2-cols > div {
+  display: flex;
+  flex-direction: row; /* Arrange children side by side */
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between; /* Space out elements evenly */
+  width: 100%;
+  max-width: 1200px; /* Ensure a max width for better layout control */
+  margin: auto; /* Center the container horizontally */
+}
+
+/* Left section containing the text */
+.ai-yellow-columns-2-cols > div > div:first-child {
+  flex: 1; /* Take up equal space */
+  text-align: left; /* Align text to the left */
+  padding-right: 40px; /* Add padding to the right for spacing */
+  display: flex;
+  flex-direction: column; /* Align text vertically */
+  justify-content: center; /* Center text vertically */
+}
+
+/* Right section containing the image */
+.ai-yellow-columns-2-cols > div > .ai-yellow-columns-img-col {
+  flex: 1; /* Take up equal space */
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  padding-left: 40px; /* Add padding to the left for spacing */
+}
+
+/* Ensure the image does not overflow its container */
+.ai-yellow-columns-2-cols > div > .ai-yellow-columns-img-col img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Ensure the image behaves as a block element */
+}
+
+/* Style for the text */
+.ai-yellow-columns-2-cols h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.ai-yellow-columns-2-cols p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* Remove previous layout adjustments for responsive design */
+@media (min-width: 900px) {
+  .ai-yellow-columns-2-cols > div {
+    align-items: center;
+    flex-direction: row; /* Maintain row direction */
+    gap: 24px;
+  }
+
+  .ai-yellow-columns-2-cols > div > div {
+    flex: 1;
+    order: unset;
+  }
+
+  .ai-yellow-columns > div {
+    display: flex;
+    flex-direction: row; /* Maintain row direction */
+  }
+
+  .ai-yellow-columns > div > .ai-yellow-columns-img-col {
+    order: unset;
+  }
+}

@@ -1,0 +1,101 @@
+
+.ai-columns-footer-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.ai-columns-footer {
+  display: flex;
+  max-width: 1200px; /* Adjust based on your design */
+  width: 100%;
+  gap: 20px; /* Space between the logo and content */
+}
+
+.ai-columns-footer > div {
+  display: flex;
+  flex-direction: row; /* Ensure side-by-side layout */
+  gap: 20px;
+}
+
+.ai-columns-footer > div > div:first-child {
+  flex: 0 0 150px; /* Adjust based on the logo's size */
+  background-image: url('path/to/logo.png'); /* Assuming the logo is a background image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.ai-columns-footer > div > div:last-child {
+  flex: 1; /* Remaining space for the content */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ai-columns-footer > div > div:last-child > ul:first-of-type {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ai-columns-footer ul {
+  display: flex;
+  flex-direction: row; /* Ensure horizontal layout for all ul elements */
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ai-columns-footer ul li {
+  margin-right: 10px;
+}
+
+.ai-columns-footer ul li a {
+  text-decoration: none;
+  color: var(--link-color); /* Ensure link color */
+}
+
+.ai-columns-footer ul li a:hover {
+  color: var(--link-hover-color); /* Ensure hover color */
+}
+
+.ai-columns-footer p {
+  margin: 10px 0;
+  color: var(--text-color); /* Ensure text color */
+}
+
+.ai-columns-footer > div > div:last-child > ul:last-of-type {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0; /* Space between the content and footer links */
+}
+
+.ai-columns-footer > div > div:last-child > p:last-of-type {
+  margin-top: 10px; /* Space between the footer links and the final line of text */
+}
+
+@media (max-width: 768px) {
+  .ai-columns-footer {
+    flex-direction: column;
+  }
+
+  .ai-columns-footer > div {
+    flex-direction: column;
+  }
+
+  .ai-columns-footer ul {
+    flex-direction: column;
+  }
+
+  .ai-columns-footer > div > div:first-child {
+    background-position: center top;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,51 @@
+
+.ai-columns-2-wrapper {
+  background-color: #80b6b1; /* Background color to match the original image */
+  padding: 20px; /* Optional padding for spacing */
+}
+
+.ai-columns-2-wrapper > .ai-columns-2 {
+  display: flex;
+  flex-direction: row; /* Ensure elements are side by side */
+  justify-content: space-between; /* Space out elements horizontally */
+  align-items: center; /* Center elements vertically */
+  gap: 20px; /* Gap between image and text */
+}
+
+.ai-columns-2-wrapper > .ai-columns-2 > div {
+  display: flex;
+  flex-direction: row; /* Ensure elements inside are side by side */
+  align-items: center; /* Center elements vertically */
+  justify-content: space-between; /* Ensure proper spacing */
+}
+
+.ai-columns-2-wrapper > .ai-columns-2 > div > .ai-columns-2-img-col {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.ai-columns-2-wrapper > .ai-columns-2 > div > div:last-child {
+  flex: 1;
+  max-width: 60%; /* Ensure proper text alignment and spacing */
+  display: flex;
+  flex-direction: column; /* Ensure text block elements are stacked vertically */
+  justify-content: center; /* Center the text block vertically */
+}
+
+.ai-columns-2-wrapper > .ai-columns-2 img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (min-width: 900px) {
+  .ai-columns-2-wrapper > .ai-columns-2 {
+    flex-direction: row; /* Ensure layout remains side by side on larger screens */
+    align-items: center;
+  }
+
+  .ai-columns-2-wrapper > .ai-columns-2 > div {
+    flex: 1;
+  }
+}
