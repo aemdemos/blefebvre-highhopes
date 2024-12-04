@@ -35,6 +35,39 @@
 @font-face {
   font-family:"Inter Fallback";
   font-style:normal;
+  font-weight:900;
+  src:local("Arial Bold");
+  ascent-override:97.15%;
+  descent-override:24.19%;
+  line-gap-override:0.00%;
+  size-adjust:99.72%;
+}
+
+@font-face {
+  font-family:"Inter Fallback";
+  font-style:normal;
+  font-weight:700;
+  src:local("Arial Bold");
+  ascent-override:97.15%;
+  descent-override:24.19%;
+  line-gap-override:0.00%;
+  size-adjust:99.72%;
+}
+
+@font-face {
+  font-family:"Inter Fallback";
+  font-style:normal;
+  font-weight:100;
+  src:local("Arial");
+  ascent-override:89.79%;
+  descent-override:22.36%;
+  line-gap-override:0.00%;
+  size-adjust:107.89%;
+}
+
+@font-face {
+  font-family:"Inter Fallback";
+  font-style:normal;
   font-weight:400;
   src:local("Arial");
   ascent-override:89.79%;
@@ -55,25 +88,25 @@
 }
 
 @font-face {
-  font-family:"Inter Fallback";
-  font-style:normal;
-  font-weight:600;
-  src:local("Arial Bold");
-  ascent-override:97.15%;
-  descent-override:24.19%;
-  line-gap-override:0.00%;
-  size-adjust:99.72%;
-}
-
-@font-face {
-  font-family:"Inter Fallback";
+  font-family:"Aleo Fallback";
   font-style:normal;
   font-weight:700;
   src:local("Arial Bold");
-  ascent-override:97.15%;
-  descent-override:24.19%;
+  ascent-override:94.34%;
+  descent-override:30.75%;
   line-gap-override:0.00%;
-  size-adjust:99.72%;
+  size-adjust:95.93%;
+}
+
+@font-face {
+  font-family:"Montserrat Fallback";
+  font-style:normal;
+  font-weight:500;
+  src:local("Arial");
+  ascent-override:87.85%;
+  descent-override:22.78%;
+  line-gap-override:0.00%;
+  size-adjust:110.19%;
 }
 
 @font-face {
@@ -88,14 +121,14 @@
 }
 
 @font-face {
-  font-family:"Inter Fallback";
+  font-family:"Aleo Fallback";
   font-style:normal;
-  font-weight:100;
+  font-weight:400;
   src:local("Arial");
-  ascent-override:89.79%;
-  descent-override:22.36%;
+  ascent-override:87.19%;
+  descent-override:28.42%;
   line-gap-override:0.00%;
-  size-adjust:107.89%;
+  size-adjust:103.79%;
 }
 
 @font-face {
@@ -107,17 +140,6 @@
   descent-override:22.36%;
   line-gap-override:0.00%;
   size-adjust:107.89%;
-}
-
-@font-face {
-  font-family:"Montserrat Fallback";
-  font-style:normal;
-  font-weight:400;
-  src:local("Arial");
-  ascent-override:87.85%;
-  descent-override:22.78%;
-  line-gap-override:0.00%;
-  size-adjust:110.19%;
 }
 
 @font-face {
@@ -134,12 +156,23 @@
 @font-face {
   font-family:"Inter Fallback";
   font-style:normal;
-  font-weight:900;
+  font-weight:600;
   src:local("Arial Bold");
   ascent-override:97.15%;
   descent-override:24.19%;
   line-gap-override:0.00%;
   size-adjust:99.72%;
+}
+
+@font-face {
+  font-family:"Montserrat Fallback";
+  font-style:normal;
+  font-weight:400;
+  src:local("Arial");
+  ascent-override:87.85%;
+  descent-override:22.78%;
+  line-gap-override:0.00%;
+  size-adjust:110.19%;
 }
 
 @font-face {
@@ -151,39 +184,6 @@
   descent-override:24.64%;
   line-gap-override:0.00%;
   size-adjust:101.85%;
-}
-
-@font-face {
-  font-family:"Aleo Fallback";
-  font-style:normal;
-  font-weight:700;
-  src:local("Arial Bold");
-  ascent-override:94.34%;
-  descent-override:30.75%;
-  line-gap-override:0.00%;
-  size-adjust:95.93%;
-}
-
-@font-face {
-  font-family:"Aleo Fallback";
-  font-style:normal;
-  font-weight:400;
-  src:local("Arial");
-  ascent-override:87.19%;
-  descent-override:28.42%;
-  line-gap-override:0.00%;
-  size-adjust:103.79%;
-}
-
-@font-face {
-  font-family:"Montserrat Fallback";
-  font-style:normal;
-  font-weight:500;
-  src:local("Arial");
-  ascent-override:87.85%;
-  descent-override:22.78%;
-  line-gap-override:0.00%;
-  size-adjust:110.19%;
 }
 
 @media (width>=900px) {
